@@ -26,7 +26,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Integration tests for {@link CustomerRepository}.
- *
+ * 集成测试--
  * @author Andy Wilkinson
  */
 @SpringBootTest

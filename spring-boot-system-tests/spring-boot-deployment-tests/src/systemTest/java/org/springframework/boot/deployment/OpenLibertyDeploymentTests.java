@@ -20,8 +20,8 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
- * Deployment tests for Open Liberty.
- * test
+ * Deployment tests for Open Liberty. test
+ *
  * @author Christoph Dreis
  * @author Scott Frederick
  */

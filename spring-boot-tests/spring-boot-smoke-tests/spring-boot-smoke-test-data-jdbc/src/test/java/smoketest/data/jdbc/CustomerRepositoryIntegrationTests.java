@@ -25,8 +25,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Integration tests for {@link CustomerRepository}.
- * 集成测试--
+ * Integration tests for {@link CustomerRepository}. 集成测试--
+ *
  * @author Andy Wilkinson
  */
 @SpringBootTest

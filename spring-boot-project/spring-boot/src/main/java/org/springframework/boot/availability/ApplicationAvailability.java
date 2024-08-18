@@ -30,6 +30,16 @@ import org.springframework.context.ApplicationContext;
  * @author Phillip Webb
  * @since 2.3.0
  */
+/**
+ * 提供应用程序的 {@link AvailabilityState 可用性状态} 信息。
+ * <p>
+ * 组件可以注入这个类以获取当前的状态信息。要更新应用程序的状态，应将 {@link AvailabilityChangeEvent}
+ * {@link ApplicationContext#publishEvent 发布} 到应用程序上下文中，或者通过 {@link AvailabilityChangeEvent#publish} 发布。
+ *
+ * @author Brian Clozel
+ * @author Phillip Webb
+ * @since 2.3.0
+ */
 public interface ApplicationAvailability {
 
 	/**

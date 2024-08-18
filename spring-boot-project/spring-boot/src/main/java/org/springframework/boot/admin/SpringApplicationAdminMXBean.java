@@ -30,6 +30,11 @@ public interface SpringApplicationAdminMXBean {
 	 * @return {@code true} if the application is ready
 	 * @see org.springframework.boot.context.event.ApplicationReadyEvent
 	 */
+	/**
+	 * 指定应用程序是否已经完全启动并且现在已准备好。
+	 * @return {@code true} 如果应用程序已准备好
+	 * @see org.springframework.boot.context.event.ApplicationReadyEvent
+	 */
 	boolean isReady();
 
 	/**
@@ -39,6 +44,11 @@ public interface SpringApplicationAdminMXBean {
 	 * @return {@code true} if the application runs in an embedded web container
 	 * @see #isReady()
 	 */
+	/**
+	 * 指定应用程序是否在嵌入式 Web 容器中运行。对于尚未完全启动的 Web 应用程序，返回 {@code false}，因此最好等到应用程序 {@link #isReady() 准备好} 后再进行操作。
+	 * @return {@code true} 如果应用程序在嵌入式 Web 容器中运行
+	 * @see #isReady()
+	 */
 	boolean isEmbeddedWebApplication();
 
 	/**
@@ -46,6 +56,11 @@ public interface SpringApplicationAdminMXBean {
 	 * {@link org.springframework.core.env.Environment Environment}.
 	 * @param key the property key
 	 * @return the property value or {@code null} if it does not exist
+	 */
+	/**
+	 * 从应用程序的 {@link org.springframework.core.env.Environment Environment} 中返回指定键的值。
+	 * @param key 属性键
+	 * @return 属性值，如果不存在则返回 {@code null}
 	 */
 	String getProperty(String key);
 
